@@ -613,6 +613,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%; /* Full width of the viewport */
+<<<<<<< Updated upstream
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -635,3 +636,6 @@
     left: 50%;
     transform: translateX(-50%);
 }
+=======
+    position: absolute;
+>>>>>>> Stashed changes
