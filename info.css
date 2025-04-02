@@ -111,8 +111,10 @@ body,
 main {
   width: 100%;
   height: 100%;
-  padding: 0;
+  padding-top: 200px;
   margin: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling issues */
+  overflow-y: auto; /* Ensures vertical scrolling works */
 }
 
 html {
@@ -121,27 +123,25 @@ html {
 }
 
 h1 {
-  color: rgb(45, 114, 66);
-  text-align: center;
+  color: #2d7242;
   margin: 0;
   position: absolute;
-  top: 50px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100; /* Ensure it's above other elements */
+  text-align: center;
 }
 
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
-  padding: 0;
   background-color: #f0f0f0;
   color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 main {
@@ -160,6 +160,51 @@ header {
   border: #CDE0C1; /* Thin white border */
 }
 
+.aboutpeared {
+  white-space: nowrap;
+}
+
+.div-container {
+  position: relative;
+  display: flex;                /* Enable flexbox */
+  flex-wrap: nowrap; /* Ensures they stay in a row */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  gap: 20px; /* Adds spacing between sections */
+  justify-content: flex-start;      /* Center content horizontally */
+  align-items: center;          /* Center content vertically */
+  background-color: #f0f0f0;    /* Background color for the button effect */
+  border: 1px solid #ccc;       /* Optional border */
+  border-radius: 5px;           /* Optional border radius for rounded corners */
+  padding: 20px;                   /* Remove default padding */
+  padding-top: 80px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  text-align: center;  
+}
+
+.div-container a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black; /* Change as needed */
+}
+
+#sectiontop div {
+  min-width: 200px; /* Ensures sections don’t shrink too much */
+  height: 200px;
+  flex: 1; /* Makes sections take equal width */
+  padding: 20px;
+  background: #fff; /* Optional background for visibility */
+  border-radius: 10px; /* Optional rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.div-container div {
+  display: flex;
+  align-items: center; /* Ensures text is centered inside each div */
+  justify-content: center; /* Centers text horizontally */
+  padding: 10px 15px;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -170,12 +215,9 @@ header {
   height: auto; /* Maintain aspect ratio */
 }
 
-h1 {
-  color: rgb(3, 70, 18);
+h2 {
   text-align: center;
-  margin: 0;
-  flex-grow: 1;
-  transform: translate(-350%, -05%);
+  width: 100%;
 }
 
 p {
@@ -391,4 +433,21 @@ button:active {
   to {
     transform: translate(0, 0);
   }
+}
+
+#about, #team, #events {
+  color: #2d7242
+}
+
+#contact, #join {
+  color:#6d5232;
+}
+
+input, textarea {
+  background-color: #203526;
+  color: #6d5232;
+}
+
+img {
+  border-radius: 20px;
 }
