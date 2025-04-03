@@ -19,69 +19,102 @@
         <h1 class="aboutpeared">About Peared</h1>
         <nav>
             <div class="div-container" id="sectiontop">
-                <div><img src="PearedLogo.jpg" alt="Logo" class="logo" onclick="location.href='main.html'"></div>
+                <div><img src="assets/PearedLogo.jpg" alt="Logo" class="logo" onclick="location.href='main.html'"></div>
                 <div><a href="#about"><h2>About Us</h2></a></div>
                 <div><a href="#team"><h2>Our Team</h2></a></div>
-                <div><a href="#events"><h2>Past Events</h2></a></div>
+                <div><a href="#history"><h2>History</h2></a></div>
                 <div><a href="#contact"><h2>Contact Us</h2></a></div>
                 <div><a href="#join"><h2>Join Us</h2></a></div>
             </div>
         </nav>
     </header>
-        
-    <section id="about">
-        <div id="about-anchor"></div>
-        <h2>About Us</h2>
-        <p>Welcome to our nonprofit organization. We are dedicated to making a positive impact in our community through various initiatives and programs.</p>
-    </section>
 
-    <section id="team">
-        <h2>Our Team</h2>
-        <p>Meet the dedicated individuals behind our organization:</p>
-        <ul>
-            <li>*Anushka Polapally*</li>
-            <li>*Gaathri Chakka*</li>
-            <li>*Sophia Ni*</li>
-            <li>*Andrew Yoon*</li>
-        </ul>
-    </section>
+    <div class="peared-sections">
+        <section id="about">
+            <div id="about-anchor"></div>
+            <h2>🍐 About Us 🍐</h2>
+            <p>Peared is a nonprofit that seamlessly simplifies logistics by centralizing large scale organizations' efforts into small, local areas!</p>
+        </section>
 
-    <section id="events">
-        <h2>Past Events</h2>
-        <p>The history of our website:</p>
-        <ul>
-            <li>Community Clean-Up - January 2025</li>
-            <li>Fundraising Gala - March 2024</li>
-            <li>Food Drive - December 2023</li>
-        </ul>
-    </section>
+        <section id="team">
+            <h2>👋 Our Team 👋</h2>
+            <p>Meet the dedicated individuals behind our organization:</p>
+            <div class="extra-sections">
+                <div class="person">
+                    <h3>Anushka Polapally</h3>
+                    <h5 class="extra-text">Web Development and Finance</h5>
+                    <img src="assets/AnushkaProfile.png" alt="Anushka" class="extra-text">
+                    <h6 class="extra-text">Anushka is a junior at Tompkins and is interested in computer science and mathematics. Through Peared, she wants to help create effective service efforts through a volunteering social network!</h6>
+                </div>
+                <div class="person">
+                    <h3>Gaathri Chakka</h3>
+                    <h5 class="extra-text">Outreach</h5>
+                    <img src="assets/GaathriProfile.png" alt="Gaathri" class="extra-text">
+                    <h6 class="extra-text">Gaathri is a sophomore at Tompkins and is interested in business and creating innovative solutions. Through Peared, she hopes to create efficient impact and foster community interactions.</h6>
+                </div>
+                <div class="person">
+                    <h3>Sophia Ni</h3>
+                    <h5 class="extra-text">Events</h5>
+                    <img src="assets/SophiaProfile.png" alt="Sophia" class="extra-text">
+                    <h6 class="extra-text">Sophia is a sophomore at Tompkins High School, and she's interested in business and finance. She's so excited to see the impact Peared will have on communities as it grows!</h6>
+                </div>
+                <div class="person">
+                    <h3>Andrew Yoon</h3>
+                    <h5 class="extra-text">Web Development</h5>
+                    <img src="assets/AndrewProfile.png" alt="AndrewAndRocky" class="extra-text">
+                    <h6 class="extra-text">Andrew is a freshman from Tompkins High School with experience in software and electrical engineering. He's trying to help making an impact efficient and approachable with new technologies like our web services!</h6>
+                    <h3 class="extra-text">(Rocky Polapally)</h3>
+                    <h5 class="extra-text">Emotional Support</h5>
+                    <h6 class="extra-text">Rocky is a dog and a major chicken nugget enthusiast! He is an expert at social engineering to collect them! (only one part of this is true)</h6>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to get in touch, please contact us at:</p>
-        <p>Email: pearedco@gmail.com</p>
-        <p>Phone: (832) xxx-xxxx</p>
-    </section>
+        <section id="history">
+            <h2>🗓 History of Peared 🗓</h2>
+            <div class="extra-sections">
+                <div>
+                    <p>Peared releases its first UIUX and database components (holistically)<br>April 2025</p>
+                    <h6 class="extra-text">The website that you're reading will house the Peared UIUX. On a future date, we will integrate our database to make it available for use hosted here. Ask us about our Beta version if you're interested!</h6>
+                </div>
+                <div>
+                    <p>Peared submits to the Diamond Challenge<br>December 2024</p>
+                    <h6 class="extra-text">In order to garner support from a wider audience, Peared submitted its concept to judges and made it to the second round.</h6>
+                </div>
+                <div>
+                    <p>Peared is Conceived<br>November 2024</p>
+                    <h6 class="extra-text">We discovered that many elderly patients passing through the hospital where Anushka's mom practices were incapable of finding help or entertainment, even if they were in good health.</h6>
+                </div>
+            </div>
+        </section>
 
-    <section id="join">
-        <h2>Join Us</h2>
-        <p>We are always looking for passionate individuals to join our cause. If you are interested in volunteering or supporting our organization, please fill out the form below:</p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+        <section id="contact">
+            <h2>🔍 Contact Us 🔍</h2>
+            <p>If you have any questions or would like to get in touch, please contact us at:</p>
+            <p>Email: pearedco@gmail.com</p>
+            <p>Phone: (832) 593-3075</p>
+        </section>
+
+        <section id="join">
+            <h2>🍎 Join Us 🍎</h2>
+            <p>We are always looking for passionate individuals to join our cause. If you are interested in volunteering or supporting our organization, please fill out the form below:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Nonprofit Organization. All rights reserved.</p>
+        <p>&copy; 2025 Peared. All rights reserved.</p>
     </footer>
 </body>
 </html>
